@@ -1,3 +1,30 @@
+<?php
+include_once "back_php/conection.php";
+
+if (isset($_POST['submit_cadastro'])) {
+    $cpf = $_POST["cpf_cadastro"];
+    $nome = $_POST["nome_cadastro"];
+    $senha = $_POST["senha_cadastro"];
+    $result = mysqli_query($conexao, "insert into usuarios (nome, cpf, senha) values ('$nome', '$cpf', '$senha')");
+}
+
+if (isset($_POST['submit_login'])) {
+    $cpf = $_POST["cpf_login"];
+    $senha = $_POST["senha_login"];
+    $result = mysqli_query($conexao, "SELECT * FROM usuarios WHERE cpf = '$cpf' AND senha = '$senha'");
+    $row = mysqli_num_rows($result);
+
+    if ($row >= 1) {
+        header("Location: front/home.php");
+        exit;
+    } else {
+        echo "<script>alert('Usuário ou senha incorretos');</script>";
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,8 +40,8 @@
     <div class="leyout">
         <h1 class="logo"><a href="https://www.anhanguera.com" target="_blank"><img src="imagens/logo.png"></a>Saúde+<br>Anhanguera</h1>
         <section>
-            <button id="b1">login</button>
-            <button onclick="abrir()" id="b2">cadastro</button>
+            <button onclick="abrir_login()" id="b1">login</button>
+            <button onclick="abrir_cadastro()" id="b2">cadastro</button>
         </section>
     </div>
     <main>
@@ -101,9 +128,8 @@
         </div>
         <!-- entre em contato -->
         <div class="contato">
-            <img src="" alt="">
+            <h1>Entre em contato conosco!</h1>
             <section>
-                <h1>Entre em contato conosco!</h1>
                 <h2>Telefone:## #########</h2>
                 <h2>Email:qualquercoisa@gmail.com</h2>
                 <h2>social: <img src=""><img src=""><img src=""></h2>
@@ -112,19 +138,33 @@
         </div>
     </main>
 
-    <div class="login">
+    <div class="cadastro">
         <section>
             <h1>cadastro</h1>
-            <button onclick="fechar()" type="none">x</button>
+            <button onclick="fechar_cadastro()" type="none">x</button>
         </section>
-        
-        <form action="back_php/verificação_cadastro.php" method="POST">
-            <p>cpf:<br><input type="text" name="cpf" id=""></p>
-            <p>senha:<br><input type="password" name="senha" id=""></p>
-            <p>confirmar senha:<br><input type="password" name="confirmar_senha" id=""></p>
-            <button type="submit">entrar</button>
+
+        <form action="" method="POST">
+            <p>nome:<br><input type="text" name="nome_cadastro" id=""></p>
+            <p>cpf:<br><input type="text" name="cpf_cadastro" id=""></p>
+            <p>senha:<br><input type="password" name="senha_cadastro" id=""></p>
+
+            <button type="submit" name="submit_cadastro">entrar</button>
         </form>
     </div>
+
+    <div class="login">
+        <section>
+            <h1>login</h1>
+            <button onclick="fechar_login()" type="none">x</button>
+        </section>
+
+        <form action="" method="POST">
+            <p>cpf:<br><input type="text" name="cpf_login" id=""></p>
+            <p>senha:<br><input type="password" name="senha_login" id=""></p>
+
+            <button type="submit" name="submit_login">entrar</button>
+        </form>
     </div>
 
     <script src="back_js/cadastro.js"></script>

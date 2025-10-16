@@ -31,13 +31,11 @@
     </header>
 
     <!-- CARROSSEL -->
-    <div class="carrossel_container">
-        <div class="carrossel">
-            <div class="slides">
-                <img src="imagens/cadastro_modelos/img1.png" alt="">
-                <img src="imagens/cadastro_modelos/img2.png" alt="">
-                <img src="imagens/cadastro_modelos/img3.png" alt="">
-            </div>
+    <div class="carrossel">
+        <div class="slides">
+            <img src="imagens/cadastro_modelos/img1.png" alt="">
+            <img src="imagens/cadastro_modelos/img2.png" alt="">
+            <img src="imagens/cadastro_modelos/img3.png" alt="">
         </div>
 
         <div class="botoes">
@@ -45,7 +43,6 @@
             <button class="btn" onclick="avancar()">&#10095;</button>
         </div>
     </div>
-
 
     <!-- PRINCIPAIS SERVIÇOS -->
     <main>
@@ -63,7 +60,7 @@
         </a>
     </main>
 
-    
+
 
     <script src="back_js/home.js"></script>
 
