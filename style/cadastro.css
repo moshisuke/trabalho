@@ -10,6 +10,7 @@ body {
 
 }
 
+/* -----leyout---- */
 .leyout {
     position: sticky;
     top: 0;
@@ -67,6 +68,7 @@ body {
     border-radius: 15px;
 }
 
+/* -----exibição---- */
 main {
     display: flex;
     flex-direction: column;
@@ -114,6 +116,7 @@ main {
     z-index: 1;
 }
 
+/* -----clinicas---- */
 #nossas_clinicas {
     font-size: clamp(1.5rem, 3vw, 4rem);
     color: #000000;
@@ -168,6 +171,7 @@ main {
     margin: 10px;
 }
 
+/* -----contato---- */
 .contato {
     display: flex;
     flex-direction: column;
@@ -183,19 +187,20 @@ main {
 .contato section {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 100vw;
     height: 70%;
     margin-right: 10%;
 }
 
-.cadastro , .login {    
+.cadastro,
+.login {
     display: none;
     flex-direction: column;
     position: fixed;
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -205,7 +210,9 @@ main {
     border-radius: 15px;
     z-index: 10;
 }
-.cadastro section , .login section{
+
+.cadastro section,
+.login section {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -213,7 +220,9 @@ main {
     text-transform: uppercase;
     color: rgb(255, 123, 0);
 }
-.cadastro section button , .login section button{
+
+.cadastro section button,
+.login section button {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -223,7 +232,9 @@ main {
     cursor: pointer;
     color: rgb(255, 123, 0);
 }
-.cadastro form , .login form{
+
+.cadastro form,
+.login form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -231,7 +242,9 @@ main {
     width: 100%;
     height: 100%;
 }
-.cadastro form button , .login form button{
+
+.cadastro form button,
+.login form button {
     width: 100%;
     height: 40px;
     border: none;

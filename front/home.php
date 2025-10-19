@@ -17,20 +17,18 @@ $nome = $_SESSION['nome'];
 
     <!-- LAYOUT -->
     <header class="leyout">
-        <h1 class="logo">
-            <a href="../front/home.php">
-                <img src="../imagens/logo.png" alt="Logo">
-            </a>
+        <a href="../front/home.php" class="logo">
+            <img src="../imagens/logo.png" alt="Logo">
             Saúde+<br>Anhanguera
-        </h1>
+        </a>
 
-        <div class="leyout_pt1">
-            <a href="#">Página Inicial</a>
-            <a href="#">Minhas Consultas</a>
-            <a href="#">Fale Conosco</a>
+        <div class="leyout_1">
+            <!-- <a href="#">página inicial</a>
+            <a href="#">minhas consultas</a>
+            <a href="#">fale conosco</a> -->
         </div>
 
-        <div class="leyout_pt2">
+        <div class="leyout_2">
             <button><img src="../imagens/home_imgs/perfil.png" alt="Perfil"><br><?php echo $nome ?></button>
         </div>
     </header>
@@ -50,46 +48,66 @@ $nome = $_SESSION['nome'];
     </div>
 
     <!-- PRINCIPAIS SERVIÇOS -->
+    <h1 style="font-size: 50px;">escolha a clínica</h1>
     <section class="servicos">
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=odontologia">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>Odontologia</p>
+                </div>
+            </div>
         </a>
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=estética">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>Estética</p>
+                </div>
+            </div>
         </a>
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=psicologia">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>psicologia</p>
+                </div>
+            </div>
         </a>
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=nutrição">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>nutrição</p>
+                </div>
+            </div>
         </a>
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=fisioterapia">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>fisioterapia</p>
+                </div>
+            </div>
         </a>
-        <a href="#">
-            <section class="fundo">
+        <a href="../front/agendamento.php?clinica=veterinária">
+            <div class="card">
                 <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            </section>
+                <div class="texto">
+                    <p>veterinária</p>
+                </div>
+            </div>
         </a>
     </section>
+
 
     <div class="contato">
         <h1>Entre em contato conosco!</h1>
         <section>
             <h2>Telefone:## #########</h2>
             <h2>Email:qualquercoisa@gmail.com</h2>
-                <h2>social: <img src=""><img src=""><img src=""></h2>
-            </section>
+            <h2>social: <img src=""><img src=""><img src=""></h2>
+        </section>
 
     </div>
 
