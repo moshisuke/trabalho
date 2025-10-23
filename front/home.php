@@ -36,9 +36,9 @@ $nome = $_SESSION['nome'];
     <!-- CARROSSEL -->
     <div class="carrossel">
         <div class="slides">
-            <img src="../imagens/cadastro_modelos/img1.png" alt="">
-            <img src="../imagens/cadastro_modelos/img2.png" alt="">
-            <img src="../imagens/cadastro_modelos/img3.png" alt="">
+            <img src="../imagens/home_imgs/img1.png" alt="">
+            <img src="../imagens/home_imgs/img2.png" alt="">
+            <img src="../imagens/home_imgs/img3.png" alt="">
         </div>
 
         <div class="botoes">
@@ -52,53 +52,103 @@ $nome = $_SESSION['nome'];
     <section class="servicos">
         <a href="../front/agendamento.php?clinica=odontologia">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img1.png" alt="">
                 <div class="texto">
                     <p>Odontologia</p>
+                    <ul>
+                        <li>Limpeza dental</li>
+                        <li>Clareamento</li>
+                        <li>Restaurações</li>
+                        <li>Tratamento de canal</li>
+                        <li>Implantes</li>
+                        <li>Ortodontia</li>
+                    </ul>
                 </div>
             </div>
         </a>
-        <a href="../front/agendamento.php?clinica=estética">
+        <a href="../front/agendamento.php?clinica=estetica">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img2.png" alt="">
                 <div class="texto">
                     <p>Estética</p>
+                    <ul>
+                        <li>Limpeza de pele</li>
+                        <li>Peeling</li>
+                        <li>Microagulhamento</li>
+                        <li>Design de sobrancelhas</li>
+                        <li>Massagem modeladora</li>
+                        <li>Lipólise</li>
+                    </ul>
                 </div>
             </div>
         </a>
         <a href="../front/agendamento.php?clinica=psicologia">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img3.png" alt="">
                 <div class="texto">
-                    <p>psicologia</p>
+                    <p>Psicologia</p>
+                    <ul>
+                        <li>Psicoterapia individual</li>
+                        <li>Terapia de casal</li>
+                        <li>Orientação vocacional</li>
+                        <li>Avaliação psicológica</li>
+                        <li>Psicoterapia em grupo</li>
+                        <li>Apoio em transtornos</li>
+                    </ul>
                 </div>
             </div>
         </a>
-        <a href="../front/agendamento.php?clinica=nutrição">
+        <a href="../front/agendamento.php?clinica=nutricao">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img4.png" alt="">
                 <div class="texto">
-                    <p>nutrição</p>
+                    <p>Nutrição</p>
+                    <ul>
+                        <li>Avaliação nutricional</li>
+                        <li>Planejamento alimentar</li>
+                        <li>Reeducação alimentar</li>
+                        <li>Emagrecimento</li>
+                        <li>Nutrição esportiva</li>
+                        <li>Condições clínicas</li>
+                    </ul>
                 </div>
             </div>
         </a>
         <a href="../front/agendamento.php?clinica=fisioterapia">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img5.png" alt="">
                 <div class="texto">
-                    <p>fisioterapia</p>
+                    <p>Fisioterapia</p>
+                    <ul>
+                        <li>Reabilitação ortopédica</li>
+                        <li>Fisioterapia respiratória</li>
+                        <li>Fisioterapia neurológica</li>
+                        <li>Tratamento de dores</li>
+                        <li>Fisioterapia pélvica</li>
+                        <li>Pilates terapêutico</li>
+                    </ul>
                 </div>
             </div>
         </a>
-        <a href="../front/agendamento.php?clinica=veterinária">
+        <a href="../front/agendamento.php?clinica=veterinaria">
             <div class="card">
-                <img src="../imagens/cadastro_modelos/img1.png" alt="">
+                <img src="../imagens/home_imgs/img6.png" alt="">
                 <div class="texto">
-                    <p>veterinária</p>
+                    <p>Veterinária</p>
+                    <ul>
+                        <li>Consultas e vacinas</li>
+                        <li>Exames laboratoriais</li>
+                        <li>Cirurgias</li>
+                        <li>Castração</li>
+                        <li>Emergências</li>
+                        <li>Nutrição para pets</li>
+                    </ul>
                 </div>
             </div>
         </a>
     </section>
+
+
 
 
     <div class="contato">
