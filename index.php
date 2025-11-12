@@ -13,6 +13,6 @@ $title = "marcação";
     <title><?php echo $title; ?></title>
 </head>
 <body>
-    <?php include "front/cadastro.php" ?>
+    <?php include "front/cadastrov2.php" ?>
 </body>
 </html>

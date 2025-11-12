@@ -1,4 +1,4 @@
-let index = 0;
+/* let index = 0;
 
 function mostrarSlide() {
   const slides = document.querySelector('.slides');
@@ -15,4 +15,8 @@ function voltar() {
   const total = document.querySelectorAll('.slides img').length;
   index = (index - 1 + total) % total;
   mostrarSlide();
-}
+} */
+
+
+
+
